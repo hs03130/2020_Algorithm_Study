@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<algorithm>
 #include<string>
@@ -12,14 +13,14 @@ int wildcard(int w, int f) {
 	//base case
 	if (w == W.size() && f == filename.size()) return 1;
 	if (W[w] != '*' && W[w] != '?' && W[w] != filename[f]) return 0;
-	// *°¡ ³¡¿¡ ¿Ã ¶§
+	// *ê°€ ëì— ì˜¬ ë•Œ
 	if (W[w] == '*' && w + 1 == W.size()) return 1;
 
-	//¹üÀ§
+	//ë²”ìœ„
 	//if (w == W.size() && f < filename.size()) return false;
 	//if (w < W.size() && f == filename.size()) return false;
 
-	//°°ÀºÁö È®ÀÎ
+	//ê°™ì€ì§€ í™•ì¸
 	if (W[w] == '?' || W[w] == filename[f]) ++w, ++f;
 	
 	// p*p, pp / *bb* , babbbc 
@@ -38,7 +39,7 @@ int main() {
 	for (int i = 0; i < C; i++) {
 		cin >> W;
 		cin >> n;
-		string file[50];	//¸Â´Â°Å ÀúÀå
+		string file[50];	//ë§ëŠ”ê±° ì €ì¥
 		int idx = 0;
 		for (int j = 0; j < n; j++) {
 			cin >> filename;
@@ -51,3 +52,4 @@ int main() {
 	}
 	return 0;
 }
+*/
