@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<algorithm>
 #include<cstring>
@@ -44,3 +45,4 @@ int jlis(int idxa, int idxb) {
 	}
 	return ret;
 }
+*/
